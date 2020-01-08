@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-07 19:01+0100\n"
+"POT-Creation-Date: 2020-01-08 12:43+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Karl Engelhardt\n"
 "Language-Team: \n"
@@ -10,3 +10,20 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: pretix_custom_css/__init__.py:13
+msgid "Pretix Custom CSS"
+msgstr ""
+
+#: pretix_custom_css/__init__.py:15
+msgid "Include Custom CSS code in all pretix pages"
+msgstr ""
+
+#: pretix_custom_css/forms.py:7 pretix_custom_css/signals.py:13
+#: pretix_custom_css/templates/pretix_custom_css/settings.html:5
+msgid "Custom CSS"
+msgstr ""
+
+#: pretix_custom_css/templates/pretix_custom_css/settings.html:14
+msgid "Save"
+msgstr ""
