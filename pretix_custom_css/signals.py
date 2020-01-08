@@ -1,7 +1,7 @@
 from django.dispatch import receiver
 from django.urls import resolve, reverse
 from django.utils.translation import ugettext_lazy as _
-from pretix.presale.signals import html_head as html_head_presale
+from pretix.presale.signals import sass_postamble
 from pretix.control.signals import nav_event_settings
 
 
@@ -24,9 +24,9 @@ def custom_css_settings(sender, request, **kwargs):
     ]
 
 
-@receiver(html_head_presale, dispatch_uid="custom_css_html_head_presale")
-def html_head_presale(sender, request=None, **kwargs):
+@receiver(sass_postamble, dispatch_uid="custom_css_sass_postamble")
+def custom_css_sass_postamble(sender, filename=None, **kwargs):
     if sender.settings.custom_css_code:
-        return "<style>" + sender.settings.custom_css_code + "</style>"
+        return sender.settings.custom_css_code
     else:
         return ""

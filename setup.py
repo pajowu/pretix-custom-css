@@ -25,7 +25,7 @@ cmdclass = {
 
 setup(
     name='pretix-custom-css',
-    version='1.0.0',
+    version='1.1.0',
     description='Include Custom CSS code in all pretix pages',
     long_description=long_description,
     url='https://github.com/pajowu/pretix-custom-css.git',
