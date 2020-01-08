@@ -1,0 +1,3 @@
+recursive-include pretix_custom_css/static *
+recursive-include pretix_custom_css/templates *
+recursive-include pretix_custom_css/locale *
