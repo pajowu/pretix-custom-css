@@ -27,6 +27,6 @@ def custom_css_settings(sender, request, **kwargs):
 @receiver(html_head_presale, dispatch_uid="custom_css_html_head_presale")
 def html_head_presale(sender, request=None, **kwargs):
     if sender.settings.custom_css_code:
-        return sender.settings.custom_css_code
+        return "<style>" + sender.settings.custom_css_code + "</style>"
     else:
         return ""
