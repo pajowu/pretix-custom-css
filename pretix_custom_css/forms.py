@@ -4,4 +4,4 @@ from pretix.base.forms import SettingsForm
 
 
 class CustomCSSSettingsForm(SettingsForm):
-    custom_css_code = forms.CharField(label=_("Custom CSS"), widget=forms.Textarea)
+    custom_css_code = forms.CharField(label=_("Custom CSS"), widget=forms.Textarea, required=False)
