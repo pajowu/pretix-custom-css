@@ -14,7 +14,7 @@ class PluginApp(PluginConfig):
         author = 'Karl Engelhardt'
         description = ugettext_lazy('Include Custom CSS code in all pretix pages')
         visible = True
-        version = '1.0.0'
+        version = '1.1.1'
         compatibility = "pretix>=2.7.0"
 
     def ready(self):
